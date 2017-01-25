@@ -1,0 +1,7 @@
+"editor.insertSpaces": false,
+"files.exclude": 
+{
+	"*/.js": true,
+	"*/.map": true,
+	"._*": true
+}
