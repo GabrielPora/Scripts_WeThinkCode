@@ -1,0 +1,14 @@
+alias gdone="git add .; git status; git commit -m 'done'; git push origin master"
+
+function gcom {
+    git status
+    git add .
+    if [ -n "$1" ]
+    then
+        git commit -m "$*"
+    else
+        git commit -m "auto commit"
+    fi
+    git push origin HEAD || git push -u origin HEAD
+    git status
+}
