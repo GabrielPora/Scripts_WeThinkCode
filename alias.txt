@@ -1,5 +1,10 @@
 alias gdone="git add .; git status; git commit -m 'done'; git push origin master"
 
+alias ga="git add ."
+alias gs="git status"
+alias gp="git push"
+
+
 function gcom {
     git status
     git add .
@@ -11,4 +16,27 @@ function gcom {
     fi
     git push origin HEAD || git push -u origin HEAD
     git status
+}
+
+function gcheck {
+    git status
+    echo ""
+    echo "Are you sure you would like to add all these changes?"
+    select yn in "Yes" "No"; do
+    case $yn in
+        Yes )
+            git add .
+            if [ -n "$1" ]
+            then
+                git commit -m "$*"
+            else
+                git commit -m "auto commit"
+            fi
+            git push origin HEAD || git push -u origin HEAD
+            git status
+            break;;
+        No ) echo "aborting..";;
+    esac
+    break;
+    done
 }
