@@ -3,6 +3,7 @@ alias gdone="git add .; git status; git commit -m 'done'; git push -u origin HEA
 alias ga="git add ."
 alias gs="git status"
 alias gp="git push"
+alias op="xdg-open ."
 
 
 function gcom {
