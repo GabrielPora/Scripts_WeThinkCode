@@ -1,0 +1,14 @@
+make sure to use my myuid.c
+
+gcc -shared -o myuid.so myuid.c         /*this will creat the myuid.so file and link the two together*/
+nm myuid.so                             /*this will show the link between the programme, mainly the so file*/
+export DYLD_LIBRARY_PATH=.              /*this will set the path of DYLD to your current folder, can use "setenv DYLD_LIBRARY_PATH ." */
+env | grep DYLD_LIBRARY_PATH            /*this will show that path has been set*/
+export DYLD_INSERT_LIBRARIES=myuid.so   /*this will set the path of DYLD insert liberies to your myuid.so file, can use "setenv DYLD_INSERT_LIBRARIES myuid.so" */
+id                                      /*You can stop here with a Linux system*/
+export DYLD_FORCE_FLAT_NAMESPACE=1      /*This is only used for OSX system as they use a flat table and not a double table which Linux uses*/
+id                                      /*this will just for that you now have root rights for this programme.*/
+
+I am not taking any responsiblilty for your use of this. It is up to you to do more research and understand the cammonds that you use, This can get you in trouble so be careful and by Odin use your brain!
+
+I will be working on a fun project that involves this. If you are interested in working on it with me then let me know on slack
