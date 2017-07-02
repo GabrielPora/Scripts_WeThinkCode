@@ -41,3 +41,8 @@ function gcheck {
     break;
     done
 }
+
+function vpush {
+    find . -type f | grep -v '.git' | xargs ruby -e 'ARGV.each { |k| puts "git add #{k}; git commit -m adding #{k}; git push;"}' | bash
+}
+
