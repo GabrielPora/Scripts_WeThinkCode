@@ -49,4 +49,4 @@ function vpush {
 
 #Load Homebrew Fix script
 source $HOME / .brew_fix.zsh
-export PATH = "/nfs/zfs-student-6/users/ggroener/.brew/opt/openal-soft/bin:$PATH"
+export PATH="/nfs/zfs-student-6/users/ggroener/.brew/opt/openal-soft/bin:$PATH"
