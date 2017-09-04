@@ -47,7 +47,6 @@ function vpush {
     find . -type f | grep -v '.git' | xargs ruby -e 'ARGV.each { |k| puts "git add #{k}; git commit -m adding #{k}; git push;"}' | bash
 }
 
-#
-Load Homebrew Fix script
+#Load Homebrew Fix script
 source $HOME / .brew_fix.zsh
 export PATH = "/nfs/zfs-student-6/users/ggroener/.brew/opt/openal-soft/bin:$PATH"
