@@ -4,5 +4,5 @@
 	"*/.js": true,
 	"*/.map": true,
 	"._*": true
-}
+},
 "editor.renderWhitespace": "boundary"
