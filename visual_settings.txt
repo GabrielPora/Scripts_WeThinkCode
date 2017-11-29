@@ -1,3 +1,4 @@
+"editor.detectIndentation": false,
 "editor.insertSpaces": false,
 "files.exclude": 
 {
@@ -6,3 +7,5 @@
 	"._*": true
 },
 "editor.renderWhitespace": "boundary"
+"window.zoomLevel": 0,
+"extensions.ignoreRecommendations": true  
