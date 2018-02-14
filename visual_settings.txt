@@ -6,6 +6,6 @@
 	"*/.map": true,
 	"._*": true
 },
-"editor.renderWhitespace": "boundary"
+"editor.renderWhitespace": "boundary",
 "window.zoomLevel": 0,
 "extensions.ignoreRecommendations": true  
